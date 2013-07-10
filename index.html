@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Carousel</title>
+
+<script type="text/javascript" src="lib1/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="lib1/jquery.jcarousel.min.js"></script>
+<link href="skins/tango1/skin.css" rel="stylesheet" type="text/css">
+
+<link href="images/bootstrap.css" rel="stylesheet" type="text/css">
+
+<link href="images/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 2,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+    });
+});
+
+</script>
+</head>
+
+<body>
+  		<div class="container">
+              <div class="row-fluid">
+              
+              <div class="pixie-carousel jcarousel-skin-tango">
+              <ul id="mycarousel">
+               
+                
+               <!---
+               		FIRST SLIDE
+                        -----------------> 
+               <li>
+                 <div class="pixie-blocks">
+                 
+                 <img src="images/img1.jpg">
+                 
+                 <h1>Lorem</h1>
+                 
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                 <p class="float-right"><a href="">More</a></p>
+                 
+                 </div><!---------/.pixie-blocks---------------------->
+
+               
+               </li>
+              
+              
+                   
+               <!---
+               		SECOND SLIDE
+                        ----------------->
+              
+                 <li>
+                 <div class="pixie-blocks">
+                 
+                 <img src="images/img2.jpg">
+                 
+                 <h1>Lorem</h1>
+                 
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                 <p class="float-right"><a href="">More</a></p>
+                 
+                 </div><!---------/.pixie-blocks---------------------->
+
+               
+               </li>
+              
+              
+                 
+               <!---
+               		THIRD SLIDE
+                        ----------------->
+                <li>
+                 <div class="pixie-blocks">
+                 
+                 <img src="images/img3.jpg">
+                 
+                 <h1>Lorem</h1>
+                 
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                 <p class="float-right"><a href="">More</a></p>
+                 
+                 </div><!---------/.pixie-blocks---------------------->
+
+               
+               </li>
+               
+               <!---
+               		FOURTH SLIDE
+                        ----------------->
+                <li>
+                 <div class="pixie-blocks">
+                 
+                 <img src="images/img1.jpg">
+                 
+                 <h1>Lorem</h1>
+                 
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                 <p class="float-right"><a href="">More</a></p>
+                 
+                 </div><!---------/.pixie-blocks---------------------->
+
+               
+               </li>
+               
+                 
+               <!---
+               		FIFTH SLIDE
+                        ----------------->
+               
+                <li>
+                 <div class="pixie-blocks">
+                 
+                 <img src="images/img1.jpg">
+                 
+                 <h1>Lorem</h1>
+                 
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                 <p class="float-right"><a href="">More</a></p>
+                 
+                 </div><!---------/.pixie-blocks---------------------->
+
+               
+               </li>
+              
+              
+              </ul>
+              
+              
+              </div><!--------/.pixie-carousel------------------->
+              
+              
+              
+              
+              
+
+ 
+            </div>  <!---------/.row-fluid--------------------->
+ 				 </div><!-------/.container----------------------->
+
+
+</body>
+</html>
