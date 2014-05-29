@@ -9,4 +9,4 @@ responsive HTML carousel is based on the Twitter Bootstrap framework with auto s
 
 You can edit the demo.css and skin.css according to your requirement.
 
-Demo:  http://damiracle.net/carousel/carouselhtml.html
+Demo:  http://amitabhaghosh197.github.io/responsive-HTML-carousel
